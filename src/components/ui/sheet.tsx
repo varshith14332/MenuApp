@@ -11,7 +11,7 @@ export const Sheet = ({ children, open, onOpenChange }: { children: React.ReactN
     )
 }
 
-export const SheetTrigger = ({ asChild, children }: { asChild?: boolean; children: React.ReactNode }) => {
+export const SheetTrigger = ({ children }: { asChild?: boolean; children: React.ReactNode }) => {
     const context = React.useContext(SheetContext)
     if (!context) throw new Error("SheetTrigger used outside Sheet")
 

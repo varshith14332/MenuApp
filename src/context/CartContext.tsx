@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEffect, ReactNode } from "react";
+import { createContext, useContext, useState, ReactNode } from "react";
 import { MenuItem } from "@/data/mockData";
 
 export interface CartItem extends MenuItem {

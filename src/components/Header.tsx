@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { ChefHat, Menu, X } from "lucide-react";
 import { CartSheet } from "./CartSheet";
+import { InstallPrompt } from "./InstallPrompt";
 
 export const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -58,6 +59,7 @@ export const Header = () => {
             <button onClick={() => scrollToSection("hero")}>Home</button>
             <button onClick={() => scrollToSection("restaurants")}>Restaurants</button>
             <button onClick={() => scrollToSection("about")}>About</button>
+            <InstallPrompt />
             <CartSheet />
 
             {!isAuthenticated ? (
@@ -78,6 +80,7 @@ export const Header = () => {
           </div>
 
           <div className="flex items-center gap-4 md:hidden">
+            <InstallPrompt />
             <CartSheet />
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

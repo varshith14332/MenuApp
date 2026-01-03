@@ -1,8 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
-import { supabase } from "@/integrations/supabase/client";
 import { Header } from "@/components/Header";
-import { MOCK_RESTAURANTS, MOCK_MENU_ITEMS, MenuItem } from "@/data/mockData";
+import { MOCK_RESTAURANTS, MOCK_MENU_ITEMS } from "@/data/mockData";
 import { useCart } from "@/context/CartContext";
 import { Button } from "@/components/ui/button";
 import { Loader2, Plus, Star } from "lucide-react";
